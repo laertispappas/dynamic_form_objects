@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe DynamicFormObjects do
+describe SimpleFormObject do
   context "Form with no validations" do
-    let(:form) { DynamicFormObjects.define_form("UserForm", :name, :password) }
+    let(:form) { SimpleFormObject.define_form("UserForm", :name, :password) }
 
     it 'instantiates a new form from a hash' do
       instance = form.new(name: 'Laertis', password: 'pappas', not_assigned: 'aaa')
@@ -33,7 +33,7 @@ describe DynamicFormObjects do
 
   context "Form with validations" do
     let(:form) do
-      DynamicFormObjects.define_form("UserForm", :name, :age, :password).with_validations do
+      SimpleFormObject.define_form("UserForm", :name, :age, :password).with_validations do
         validates_presence_of :name
         validates :age, presence: true
       end
