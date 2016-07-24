@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'simple_form_object/version'
+require 'dynamic_form_objects/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "simple_form_object"
-  spec.version       = SimpleFormObject::VERSION
+  spec.name          = "dynamic_form_objects"
+  spec.version       = DynamicFormObjects::VERSION
   spec.authors       = ["Laertis Pappas"]
   spec.email         = ["laertis.pappas@gmail.com"]
 
   spec.summary       = %q{Utility helper to define form objects on the fly}
   spec.description   = %q{Define a form class that can be used with ativesupport.}
-  spec.homepage      = "https://www.github.com/laertispappas/simple_form_object"
+  spec.homepage      = "https://www.github.com/laertispappas/dynamic_form_objects"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

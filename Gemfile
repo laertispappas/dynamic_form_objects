@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in simple_form_object.gemspec
+# Specify your gem's dependencies in dynamic_form_objects.gemspec
 gemspec

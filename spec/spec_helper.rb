@@ -1,3 +1,3 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'simple_form_object'
+require 'dynamic_form_objects'
 

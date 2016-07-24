@@ -1,18 +1,18 @@
-require "simple_form_object/version"
+require "dynamic_form_objects/version"
 require 'active_model'
 
-module SimpleFormObject
+module DynamicFormObjects
   # Defines a new form object: 
   #
   # Usage:
   # 
-  # UserForm = SimpleFormObject.define_form("UserForm", :first_name, :last_name, :age, :password).with_validations do
+  # UserForm = DynamicFormObjects.define_form("UserForm", :first_name, :last_name, :age, :password).with_validations do
   #   validates_presence_of :first_name
   #   validates_presence_of :last_name
   # end
   #
   # -- or
-  # UserForm = SimpleFormObject.define_form("UserForm").
+  # UserForm = DynamicFormObjects.define_form("UserForm").
   #   with_validations { validates_presence_of :name}.
   #   with_validations { validates_presence_of :age }
   #

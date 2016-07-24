@@ -1,4 +1,4 @@
-# SimpleFormObject
+# DynamicFormObjects
 
 Create Form Objects "on the "fly". Useful for defining simple forms.
 
@@ -7,7 +7,7 @@ Create Form Objects "on the "fly". Useful for defining simple forms.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simple_form_object'
+gem 'dynamic_form_objects'
 ```
 
 And then execute:
@@ -16,15 +16,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install simple_form_object
+    $ gem install dynamic_form_objects
 
 ## Usage
 Create a form object:
 ```ruby
-  UserForm = SimpleFormObject.define_form('UserForm', :name, :age)
+  UserForm = DynamicFormObjects.define_form('UserForm', :name, :age)
  
   # Or add some validations:
-  UserForm = SimpleFormObject.define_form('UserForm', :name, :age).with_validations do 
+  UserForm = DynamicFormObjects.define_form('UserForm', :name, :age).with_validations do 
     validates_presence_of :name
     # Other validations...
   end
@@ -45,5 +45,5 @@ Create a form object:
 ```
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/simple_form_object.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dynamic_form_objects.
 
